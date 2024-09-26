@@ -33,7 +33,7 @@ using TCPClient = WiFiClient;
 using TCPServer = WiFiServer;
 
 /////////////////////////////////////////////////////////////////
-class ESPTelnetBase {
+class ESPTelnetBase : public Print {
   typedef void (*CallbackFunction)(String str);
 
  public:
